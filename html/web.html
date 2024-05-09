@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha384-..." crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--<link rel="stylesheet" href="web.css">-->
+    <style>
+        *{      
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #777272;
+}
+.navbar{
+    width: 100%;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 100%;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #ff7200;
+    font-style: normal;
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+    font-size: 30px;
+}
+.main {
+    margin-top: 0px;
+    width: 100%;
+    background-size: cover;
+    background-image: url('photo/1.jpg');
+    height: 109vh;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%,url('photo/1.jpg'));
+    background-position: center;
+    background-color: rgba(0,0,0,0.5);
+}
+.menu{
+    width: 400px;
+    float: left;
+  
+    height: 70px;
+    
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+}
+li a{
+    font-family: Arial;
+    font-weight: 100;
+    text-decoration: none;
+    color: #fff;
+}
+ul{
+    align-items: center;
+    justify-content: center;
+    float:left ;
+    display: flex;
+}
+li a:hover{
+    color: #ff7200;
+}
+.search{
+    float: left;
+    width: 330px;
+    margin-left:270px ;
+}
+.src{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+    float: left;
+    border: 1px solid #ff7200;
+    background: transparent;
+    width:200px ;
+    height: 40px;
+    margin-top: 13px;
+    border-right: none;
+}
+.btn{
+    cursor: pointer;
+    float: left;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    height: 40px;
+    background: #ff7200;
+   
+}
+.btn:focus{
+    outline: none;
+}
+.src:focus{
+    outline: none;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    columns: #fff;
+    margin-left: 0;
+}
+.content.par{
+    color: #fff;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+}
+.h1,.par{
+    color: #fff;
+}
+.cn{ 
+    top: 450px;
+    border: none;
+    background: #ff7200;
+    width: 160px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cn:hover{
+    transition: .2 ease;
+    background-color: #fff;
+}
+.cn a{
+    text-decoration: none;
+
+}
+.form{
+    width: 250px;
+    height: 280px;
+    background: linear-gradient(to top,rgba(0,0,0,0.6)50%,rgba(0,0,0,0.6)50%);
+    position: absolute;
+    left: 880px;
+    top: 330px;
+    border-radius: 10px;
+}
+.par{
+    margin-left: 40px;
+}
+.form a{
+    text-decoration: none;
+}
+.form p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 270px;
+}
+#email{
+    margin-top: 7px;
+}
+.form input{
+    margin: 10px;
+    padding: 6px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-top: none;
+    color: #fff;
+}
+.form input:hover{
+    border: 1px solid #fff;
+}
+.bt {
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    
+    padding: 6px;
+}
+   
+.a{
+    margin-left: 60px;
+    background-color: #ff7200;
+    border-radius: 10px;
+    padding: 3px;
+}
+.a:hover{
+    background-color: black;
+    border: 1px solid #fff;
+}
+.p1{
+    margin-left: 5px;
+}
+.p2{margin-bottom: 1px;
+    margin-top: 14px;
+    margin-left: 42px;
+}
+::placeholder{
+    color: #777272;
+}
+.btns a{
+    font-weight: bold;
+}
+.btns {
+    margin-left: 15px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    
+    padding: 6px;
+}
+   .btns:hover {
+    background-color: black;
+}
+.img{
+    border-radius: 50px;
+}
+.d{
+    color: rgb(202, 202, 241);
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+.span{
+    color: coral;
+    font-style: oblique;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo ion-icon{
+    margin-top: 2px;
+    padding-left: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 12px;
+    transition: ;
+}
+.logo ion-icon:hover{
+    color: #ff7200;
+}
+.cm{ 
+    margin-top: 100px;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+    
+}
+.c {
+    margin-top: 270px;
+}
+.c a{
+    height: 50px;
+    
+    margin-left: 85px;
+}
+.contactme ion-icon{
+    
+ color: #1e1b1b;
+ padding: 50px;
+ font-size: 60px;
+}
+.now{
+    box-shadow: 0px 0px 1px 0px #333;
+    position: fixed;
+}
+ #contactme{
+    background-color: #777272;
+ }  
+ hr{
+    align-items: center;
+ }
+ #aboutme{
+    display: block;
+ }
+ .aboutme img{
+    height: 500px;
+    width: 350px;
+    margin-top: 90px;
+   border-radius: 80%;
+opacity: 3;
+ }
+ #aboutme .aboutme {
+    float: left;
+ }
+ #aboutme h1{
+    text-align: center;
+    margin-left: 100px;
+ }
+ .me h1{
+    text-align: center;
+    color: #fff;
+    font-weight: 900px;
+    line-height: 1.2;
+    font-variant:initial;
+    font-size: 40px;
+    font-style:oblique ;
+    text-transform: capitalize;
+ }
+ .me{
+    width: 40%;
+    float: left;
+    margin-left: 170px;
+    margin-top: 150px;
+ }
+ .me p{
+    color: #fff;
+    word-spacing: 5px;
+    text-align: justify;
+   
+ }
+ .left {
+    margin-left: 160px;
+  
+ }
+ .left h1{
+   
+    text-align: center;
+    font-size: 25px;
+    color: blue;
+ }
+ .service{
+    
+    clear: both;
+ }
+ .service image{
+    float: left;
+    clear: both;
+ }
+ .service span{
+    margin-top: 0px;
+    margin-right: 40px;
+    margin-left: 30px;
+ }
+ .face ion-icon{
+    
+    color: rgb(38, 38, 135);
+ }
+ .you ion-icon{
+    color: rgb(148, 52, 52);
+ }
+ .srv-icon  h1{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+     font-size: 45px;
+ }
+ .contactme ion-icon{
+    
+    color: #1e1b1b;
+    padding: 50px;
+    font-size: 60px;
+   }
+.face ion-icon{
+    
+    color: rgb(38, 38, 135);
+ }
+ .you ion-icon{
+    color: rgb(148, 52, 52);
+ }
+ .c2{
+    background-color: #a39b9b;
+ }
+ .cnin{
+ float: left;
+  width: 30%;
+ }
+ .comment{
+    margin-top: 70px;
+    margin-left: 50%;
+    width: 60%;
+ }
+ .comment label{
+    color: #a09c9c;
+ }
+ .submit{
+    margin-left: 25%;
+    padding: 8px;
+    border-radius: 7px;
+    color: rgb(77, 68, 68);
+    cursor: pointer;
+    background-color: #d8d0d0;
+ }
+ .submit:hover{
+    background-color: #ff7200;
+    color: #fff;
+    border-radius: 7px;
+ }
+
+ footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      opacity: 0.5;
+      vertical-align:middle;
+      bottom: 3px;
+    }
+    .image img{
+        margin-left: 30px;
+        width: 160px;
+        height: 150px;
+        border-radius: 13px;
+    }
+    .image a{
+        display: block;
+    }
+    .image img:hover{
+        margin-left: 30px;
+        width: 180px;
+        height: 160px;
+
+    }.service_image{
+        display: grid;
+        padding: 17px;
+  grid-template-columns: repeat(3, 1fr); /* Two columns with equal width */
+  grid-gap: 10px; 
+    }
+  
+    </style>
+</head>
+<body>
+   <div class="main">
+       <div class="navbar">
+           <div class="icon">
+            <div class="now">
+              <h2 class="logo">
+                <img class="img" src="photo/hwt.jpg" style="width: 50px;height: 50px;" alt="">
+                Henok
+              </h2>
+              <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="#">DESIGHN</a></li>
+                    <li><a href="#aboutme">ABOUT</a></li> 
+                </ul>
+              </div>
+              <div class="search">
+                <input class="src" type="search" name="" placeholder="type here">
+                <a href="#"><button class="btn">search</button></a>
+              </div>
+            </div>
+              <div class="content">
+                <br><br><br><br><br>
+               <h1 class="h1"> Web design &<br>Development with<br><em>Henok</em></h1>
+          <p class="par">
+                <br><br><br>
+                I really decided not to look back.<br>
+                 I want to see myself from where I want to be.<br>
+                   I will never go back again.<br><br>
+              
+                   <br><br><br><br><br><br><br><br><br><br></p>
+                <button class="cn"><a href="#contactme"> Contact me</a></button>
+            </div>
+            <div class="form">
+                
+                <input type="email" name="email" id="email" placeholder="enter your email account" required>
+                <input type="password" name="password" id="password" placeholder="enter password" required><br>
+                <button class="btns"  style="background-color:#ff7200;" ><a href="#" style="color: #fff;text-decoration: none;border-radius: 8px;">Login</a></button>
+                <p class="p1" style="color: #fff;" class="link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Don't have an account</p><br>
+                <a class="a" href="#" style="color: #fff;text-decoration: none;border-radius: 8px; " >Sign Up</a>
+                <br>
+                <div class="p2"style="color: #fff;"  >&nbsp;&nbsp;&nbsp;&nbsp;Login with</div>
+                <div class="logo">
+                    <a href="#"><ion-icon name="logo-facebook"> </ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"> </ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"> </ion-icon></a>
+                    <a href="#"><ion-icon name="logo-youtube"> </ion-icon></a>
+                </div>
+            </div>
+           </div> 
+       </div>
+   </div>
+  
+   <section class="service" id="service">
+       
+    <span class="srv-icon">
+        <h1>Services
+        </h1>
+<br><br>
+            <div class="service_image">
+               <a href=""><img src="photo/video_image.jpg" alt=""> Online video tutorial </a>
+               <a href=""><img src="photo/video_image.jpg" alt=""> </a>
+               <a href=""><img src="photo/video_image.jpg" alt=""> </a> 
+               <a href=""><img src="photo/video_image.jpg" alt=""> </a>
+               <a href=""><img src="photo/video_image.jpg" alt=""> </a>
+               <a href=""><img src="photo/video_image.jpg" alt=""> </a> 
+
+            </div>
+   
+   
+    </span>
+</section>
+   <section id="aboutme" style="display: block;">
+    <div class="aboutme">
+     <img src="photo/hwt.jpg" alt="Hi all">
+    </div>
+
+     </div>
+      <div class="me">
+        <h1>Henok Web Design</h1><br><br>
+        <p>Welcome to my website! I'm a web designer with several years of experience in creating beautiful and functional websites. My team is dedicated to delivering high-quality design solutions that align with my clients' goals.</p>
+        <p>At my company, i believe in the power of design to make a lasting impact. I work closely with ny clients to understand their unique needs and create designs that not only look great but also provide a seamless user experience.</p>
+        <p>My team of talented designers and developers is passionate about what we do, and we strive to exceed my clients' expectations with every project i undertake.</p>
+        <p>My design philosophy is centered around creating visually appealing and user-friendly websites. I believe that good design goes beyond aesthetics and should enhance the user experience.</p>
+        <button class="cn" style="margin-top: 50px;"><a href="#contactme"> Contact me</a></button>
+    </div>
+    <div class="left">
+        <h1 style="margin-top: 20px;">B</h1>
+        <h1>E</h1>
+        <h1>C</h1>
+        <h1>O</h1>
+        <h1>M</h1>
+        <h1>E</h1><br>
+        <h1>E</h1>
+        <h1>X</h1>
+        <h1>P</h1>
+        <h1>E</h1>
+        <h1>R</h1>
+        <h1>T</h1><br>
+        <h1>W</h1>
+        <h1>I</h1>
+        <h1>T</h1>
+        <h1>H</h1><br>
+        <h1>ME</h1>
+     
+    <br><br><br><br>
+    
+    </div>
+    </section>
+
+    <div id="contactme" style="margin-top: 90px;">
+        <br><br>
+       <div class="contactme">
+            
+            <div class="contact1">
+                <div class="cnin">
+                    <h1 style="color: #f3efef; font-size: 36px;font-display:inherit;">Get in contact me</h1><br><br>
+                    <p style="margin-left: 20px; color: #d8d0d0;">TEL:+251925254436</p><br>
+                    <p style="margin-left: 20px;color: #d8d0d0;">email:hw93goj@gmail.com</p>
+
+                     
+                </div>
+                <br>
+                <div class="comment">
+                    <form action="">
+                        <label for="">Name: <br>
+                        <input type="text" name="name" required style="width: 380px;height: 60px;"></label>
+                        <br>
+                        <label for="">Email: <br>
+                            <input type="email" required name="email" style="width: 380px;height: 60px;"></label>
+                            <br><br>
+                                <textarea name="text" placeholder="write your comment her" style="height: 100px; width :380px;"></textarea>
+                                <br><br><br>
+                                <input class="submit" type="submit"></button>
+                            </form>
+                </div>
+            </div>
+            <div class="c2">
+            <div class="c">
+                <a class="face" href="#"><ion-icon name="logo-facebook">facebook </ion-icon></a>
+                <a class="you" href="http://www.youtube.com/@Napiofficial21"><ion-icon name="logo-youtube"> </ion-icon></a>
+                <a  href="mailto:hw93goj@gmail.com"> <ion-icon style="color: #f3efef;" name="mail"></ion-icon></a>
+                <a href="tel:+251925254436"><ion-icon style="color: #f3efef;" name="call"></ion-icon></a>
+            </div>
+        </div>
+       </div>
+       <footer>
+        &copy; Henok web design. All rights reserved.
+      </footer>
+    </div>
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

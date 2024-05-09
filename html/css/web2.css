@@ -1,0 +1,50 @@
+<style>
+        .d1{
+            background-color: gray;
+            height: 70px;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .d1 .d11{
+            background-color: aqua;
+            width: fit-content;
+            height: 100%;
+            display: flex;
+        }
+        .d1 .d12{
+            background-color: rgb(20, 33, 33);
+            width: 60px;
+            height: 100%;
+        }
+        .d1 .d13{
+            background-color: rgb(138, 146, 146);
+            width: 60px;
+            height: 100%;
+        }
+.d11 a{ text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.d11 a:hover{
+    background-color: blue;
+    color: azure;
+    display: block;
+}
+*{
+    box-sizing: border-box;
+}
+     .div2 a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+       
+     }
+     .div2 {
+       
+        background-color: rgb(31, 48, 63);
+     }
+     .div2 nav{
+        float:left;
+     }
+    </style>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personel Website</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/white.css">
+  <link rel="stylesheet" href="css/toggle.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha384-..." crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+  <div class="header col">
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="photo/logo.jpg" alt="" class="logo-image">
+        <h1 class="logo-name">H <span class="logo-w">W</span></h1>
+      </div>
+      <div class="nav-menu nav-list">
+        <ul class="nav-lists">
+          <li> <a href="#">Home</a></li>
+          <li> <a href="#about">About</a></li>
+          <li> <a href="#project">Project</a></li>
+          <li> <a href="#skill">Skills</a></li>
+          <li> <a href="#contact">Contacts</a></li>
+        </ul>
+      </div>
+      
+      <div class="theme" id="theme" onclick="changeImage()" >
+        <span class="dark"> </span>
+      </div>
+       
+      <div class="nav-toggle" id="toggler">
+        <span class="tog"></span>
+        <span class="tog"></span>
+        <span class="tog"></span>
+      </div>
+    </div>
+  </div>
+  <section class="home col" id="home">
+    <div class="quote-links">
+      <div class="quote">
+        <span class="hi">Hello,</span>
+        <span class="i-am">it's me!</span>
+        <h1 class="name">Henok Worku</h1><br>
+        <span class="job">
+          <h2 class="am">
+            And I am
+          </h2>
+          <span class="front">front</span>
+          end web developer!
+        </span>
+      </div><br><br><br><br>
+      <div class="social-links">
+        <a href="https://github.com/HenokWork/henok">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://t.me/Ajeb12">
+          <i class='bx bxl-telegram'></i>
+ 
+        </a>
+        <a href="@Napiofficial21">
+          <i class='bx bxl-youtube'></i>
+        </a>
+      </div>
+      <div class="download-cv">
+        <a href="" class="my-cv">Download CV</a>
+        <a href="#contact" class="c-me">Contact Me</a>
+      </div>
+    </div>
+    <div class="bg-image" id="bg-image">
+      <img src="photo/hw_black.jpg" alt="" class="img">
+    </div>
+  </section>
+  <section class="about" id="about">
+    <h1 class="abt-title">ABOUT</h1>
+    <div class="about-me">
+      <div class="me">
+        <div class="me2">
+          <span class="left">Name:</span>
+          <span class="right">Henok Worku</span><br><br>
+          <span class="left">Email:</span>
+          <span class="right"><a href="mailto:hw93gojj@gmail.com" class="my-email">                      <i class="bx bxs-envelope"></i>
+            hw93gojj@gmail.com</a></span><br><br>
+          <span class="left">Address:</span>
+          <span class="right"><a href="https://www.google.com/maps?q=Bahir+Dar,+Ethiopia" class="my-address"  ><i class="bx bxs-map"></i> Bahir dar, Ethiopia</a></span><br><br>
+          <span class="left">Phone:</span>
+          <span class="right"><a href="tel:+251925254436" class="my-address">                      <i class="bx bx-phone"></i>
+            +251 925 254436 </a> <br><a href="tel:+251948736453" class="phone2"> +251 948736453
+               </a></span><br>
+          <div class="experiance">
+            <div class="exp1 frt-back">
+              <i class="fas fa-chart-line"></i>
+              <h1 class="frt titl">Experiance</h1>
+              <h5 class="frt">1+ year</h5>
+              <h5 class="frt">Frontend development</h5>
+            </div>
+            <div class="exp2 frt-back">
+              <i class="fas fa-graduation-cap"></i>
+              <h1 class="frt titl"><strong>Education</strong></h1>
+              <h5 class="frt">undergraduated</h5>
+              <h5 class="frt">
+                third year CS student
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="download-cv cv2">
+          <div class="cv">
+            <a href="" class="my-cv">Download CV</a>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="photo/hw_black.jpg" alt="" class="abt-img"  >
+      </div>
+    </div>
+  </section><br><br>
+  <section class="project" id="project">
+    <h1 class="projects">Project</h1>
+    <div class="my-projects">
+      <div class="pro-image">
+        
+        <figure class="pro-fig">
+          <div class="projectss">
+            <a href="html/index.html">
+          <img src="photo/hen_web.png" alt="" class="project-1">
+        </a>
+        </div>
+          <figcaption><span class="proj">Project four </span>  <br>My Personel Website</figcaption>
+        </figure>
+      </div>
+      <div class="pro-image">
+        <figure>
+          <div class="projectss">
+            <a href="html/home1.html">
+          <img src="photo/hw4.png" alt="" class="project-1">
+        </a>
+        </div>
+          <figcaption><span class="proj">Project three </span> <br>My Personel Website</figcaption>
+        </figure>
+      </div>
+      <div class="pro-image">
+        <figure>
+          <div class="projectss">
+            <a href="html/web.html">
+          <img src="photo/w1.png" alt="" class="project-1">
+        </a>
+        </div>
+          <figcaption><span class="proj">Project two </span>  <br>Myfirst personal website</figcaption>
+       
+        </figure>
+      </div>
+      <div class="pro-image">
+        <figure>
+          <div class="projectss">
+          <a href="">
+            <img src="photo/pc2.webp" alt="" class="project-1">
+          </a>
+          </div>
+          <div class="projectss"></div>
+          <figcaption s "><span class="proj">Project one </span> 
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section> 
+  <section class="skill" id="skill">
+    <h1 class="skill-title">Skill</h1>
+    <div class="front-back-end">
+      <div class="front-end">
+        <h1 class="front-skill">Frontend Development</h1>
+        <div class="about-front-skill">
+
+          <div class="frontend ">
+            <div class="i-div"> <i class="fa-brands fa-html5"></i>
+              <span class="html l-name">HTML</span>
+            </div>
+            <p> experianced</p>
+          </div>
+          <div class="frontend frd">
+            <div class="i-div">
+              <i class='bx bxl-css3'></i> 
+              <span class="html l-name" style="position: relative;left: -30px;">CSS</span>
+            </div>
+            <p> experianced</p>
+          </div>
+          <div class="frontend ">
+            <div class="i-div">
+              <i class='bx bxs-file-js'></i> 
+              <span class="html l-name">JavaScript</span>
+            </div>
+            <p>intermediate</p>
+          </div>
+          <div class="frontend frd">
+            <div class="i-div">
+              <i class='bx bxl-typescript'></i> <span class="html l-name">TypeScript</span>
+            </div>
+            <p> intermediate</p>
+          </div>
+        </div>
+      </div>
+      <div class="back-end">
+        <h1 class="front-skill">Backend Development</h1>
+        <div class="about-front-skill">
+
+          <div class="frontend ">
+            <div class="i-div">
+              <i class='bx bxl-postgresql'></i> <span class="html l-name">SQL</span>
+            </div>
+            <p> Basic</p>
+          </div>
+          <div class="frontend frd">
+            <div class="i-div">
+              <i class='bx bxl-php'></i> <span class="html l-name">PHP</span>
+            </div>
+            <p> intermediate</p>
+          </div>
+          <div class="frontend ">
+            <div class="i-div">
+              <i class='bx bxl-php'></i> <span class="html l-name">Nodejs</span>
+            </div>
+            <p>intermediate</p>
+          </div>
+          <div class="frontend frd">
+            <div class="i-div">
+              <i class='bx bxl-gitlab'></i> <span class="html l-name">Git</span>
+            </div>
+            <p> intermediate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h1 class="contact-title">Contact</h1>
+    <div class="contacts">
+      <div class="contact-info">
+        <div class="contact-me">
+          <h1 class="let-us-talk">Let us talk</h1>
+          <img src="photo/zez.jpg" alt="" class="contact-image">
+          <div class="soc-links">
+            <a href="https://github.com/HenokWork/henok">
+              <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://t.me/Ajeb12">
+              <i class='bx bxl-telegram'></i>
+            </a>
+            <a href="@Napiofficial21">
+              <i class='bx bxl-youtube'></i>
+            </a>
+          </div>
+        </div>
+        <div class="submit-form">
+          <h1 class="cnt-me">Contact me</h1>
+          <form action="mailto:hw93gojj@gmail.com" class="contact-form">
+            <div class="input-form">
+              <input type="text" class="input-name" required>
+              <label for="" class="name">Name</label>
+            </div>
+            <div class="input-form">
+              <input type="email" class="input-name" required>
+              <label for="" class="name">Email</label>
+            </div>
+            <div class="input-form">
+              <input type="tel" class="input-name" required>
+              <label for="" class="name">Phone</label>
+            </div>
+            <div class="input-form">
+              <textarea name="" id="" class="input-name textarea" required></textarea>
+              <label for="" class="name">Message</label>
+            </div><br><br><br>
+            <div class="button-2">
+              <input type="button" class="button" value="Send" required>
+              <input type="reset" class="button" value="Clear" required>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer" id="footer">
+    <h1 class="henok" style="visibility: hidden;">Henok Worku</h1>
+    <div class="footer-item">
+      <div class="links">
+        <h1 class="lnk f-title">Links</h1>
+        <ul class="nav-list" style="list-style-type: none; text-align: justify;">
+          <li> <i class="bx bxs-home-alt-2"></i> <a href="#">Home</a></li>
+          <li> <i class="bx bxs-user"></i> <a href="#about">About</a></li>
+          <li>  <i class="bx bxs-file-find"></i> <a href="#project">Project</a></li>
+          <li><i class="bx bxs-ghost"></i> <a href="#skill">Skills</a></li>
+          <li> <i class="bx bxs-message-dots"></i> <a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="soc-link">
+         <h1 class="so-link-title f-title">Social links</h1> 
+        <div class="social-link">
+          <a href="">
+            <div>
+            <i class='bx bxl-github'></i>
+            <h5 class="link-name">gitHub</h5>
+          </div>
+          </a>
+          <a href="">
+            <div>
+            <i class='bx bxl-telegram'></i>
+            <h5 class="link-name"> &nbsp;&nbsp;Telegram</h5>
+          </div>
+          </a>
+          <a href="">
+            <div>
+            <i class='bx bxl-youtube'></i>
+            <h5 class="link-name">Youtube</h5>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="about-footer">
+        <h1 class="abt-footer-title f-title">About</h1>
+        <div class="abt-f-link">
+          <div class="div2">
+          <span class="left left2">Name:</span>
+          <span class="right right2"  >Henok Worku</span><br> 
+        </div>
+        <div class="div2">
+          <span class="left left2">Email:</span>
+          <span class="right right2"><a href="mailto:hw93gojj@gmail.com" class="my-email">hw93gojj@gmail.com</a></span><br> 
+        </div>
+        <div class="div2"> 
+          <span class="left left2">Address:</span>
+          <span class="right right2"><a href="https://www.google.com/maps?q=Bahir+Dar,+Ethiopia" class="my-address">Bahir dar, Ethiopia</a></span>  
+          </div>
+          <div class="div2">
+          <span class="left left2">Phone:</span>
+          <span class="right right2 ">
+            <a href="tel:+251925254436" class="my-address ">+251 925 254 436 </a> 
+             <a href="tel:+251948736453" class="phone2 phon"> +251 948 736 453</a>
+            </span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="copy-right">
+      <div class="col-md-12 text-center">
+        <p>
+           Copyright &copy;   All rights reserved 
+        </p>
+      </div>
+    </div>
+  </section>
+  <script src="javascript/main.js">
+       
+    function changeImage() {
+      var image = document.getElementById('bg-image');
+
+      if (image.src.endsWith('hw_black.jpg')) {
+        image.src = ' hen_web.png'; // Change to dog image
+      } else {
+        image.src = ' hw_black.jpg'; // Change back to cat image
+      }
+    }
+  
+  </script>
+</body>
+
+</html>

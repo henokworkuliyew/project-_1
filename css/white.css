@@ -1,0 +1,89 @@
+ /*NAVIGATION MENU*/
+ :root {
+    
+    --first-colors: hsl(224, 89%, 60%);
+    --second-colors: hsl(224, 56%, 12%);
+    --font-color-1: white;
+    --font-color-2: #ff8800;
+    --first-color: #ffbd39;
+    --second-color: #00202e;
+    --third-color: black;
+  }
+  .active {
+    
+    background-color: var(--font-color-1);
+    .theme .dark {
+        
+        left: 25px;
+        box-shadow: inset 0 5px 30px rgb(27, 25, 25),
+          inset 0 300px 117px rgb(101, 98, 98), inset 0 -2px 2px rgb(88, 86, 86);
+      }
+      .c-me{
+       color: #00202e;
+    }
+    .c-me:hover{
+      color: #00202e;
+    }
+      .theme{
+        background-color: var(--font-color-1);
+      }
+      .download-cv .my-cv:hover{
+       color: #00202e;
+    }
+    .home{
+      background-color: white;
+    }
+    span,a{
+      color:rgb(101, 44, 56);
+    }
+    a:hover{
+
+      color: #ff8800;
+    }
+    h1{
+      color:var(--font-color-2);
+    }
+    .me{
+      background-color: white;
+    }
+    .contact-info{
+      background-color: rgb(250, 247, 247);
+    }
+    .contact-me{
+      background-color: rgb(159, 154, 154);
+    }
+    h5{
+      color: rgb(105, 67, 140);
+    }
+    i{
+      color: rgb(36, 177, 177);
+    }
+    .frt-back{
+      border: 1px solid rgb(121, 18, 35);
+    }
+    .input-form .input-name:focus ~ label,
+.input-form .input-name:valid ~ label{
+     
+    background:rgb(250, 247, 247);
+
+}
+.soc-links i{
+  color: rgb(52, 52, 108);
+}
+.footer{
+  background-color: rgb(159, 154, 154);
+}
+.footer i{
+  color: white;
+}
+.social-link .link-name:hover{
+  color: #ff8800;
+}
+
+.footer h1{
+  color: white;
+}
+.submit-form{
+  background-color:rgb(250, 247, 247) ;
+}
+}

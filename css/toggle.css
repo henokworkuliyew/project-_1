@@ -1,0 +1,39 @@
+@media (max-width:968px){
+    .nav-toggle{
+        display: block;
+        cursor: pointer;
+    }
+    .active{
+        .nav-lists a{
+            
+            font-weight: 600;
+        }
+        .nav-lists{
+            background-color: black;
+            width: 100%;
+        }
+    }
+    .nav-menu{
+        background-color: black;
+    }
+    .nav-lists a{
+        font-weight: 600;
+    }
+    .nav-lists{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: fixed;
+        width: 100%;
+        gap: 40px;
+        background-color: black;
+        opacity: .9;
+        top: 70px;
+        left: -2000px;
+        transition: all .6s ease-in-out;
+    }
+    .nav-lists.active2{
+        left: 0px;
+        text-align: justify;
+        
+    }
+}

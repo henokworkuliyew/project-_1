@@ -1,0 +1,63 @@
+
+body.active{
+  background-color: hsl(0, 0%, 100%);
+  color:rgb(66, 61, 61);
+}
+
+
+body.active .header {
+  background-color:  rgb(254, 254, 254);
+   box-shadow: 4px 4px 4px rgb(130, 130, 130);
+   color: rgb(16, 14, 14);
+}
+body.active .quete h1{
+  color:black;
+}
+body.active .nav{
+  background-color:  rgb(254, 254, 254);
+  box-shadow: 4px -4px -4px black;
+  }
+body.active .nav-list .nav-item a{
+  color: rgb(25, 23, 22);
+}
+body.active .nav-toggle
+{
+  background-color: black;
+}
+body.active .tomtech
+{
+  color: var(--first-colors);
+}
+body.active .button{
+   border: 2px solid rgb(225, 225, 225);
+
+}
+body.active .buttons #btn1{
+   background-color: var(--first-colors);
+   color: #ecebeb;
+}
+
+body.active .home-title {
+  font-size: 50px;
+  margin-bottom: var(--mb-5);
+}
+body.active .home-title-color {
+  color: var(--first-colors);
+}
+body.active .media-icon{
+   color: rgb(16, 15, 15);
+}
+body.active .media-icon:hover{
+  color: rgb(141, 141, 141);
+}
+
+body.active .nav-menu.active li a {
+bottom: 0;
+left: 0;
+color: rgb(28, 24, 24);
+}
+body.active .shadow
+{
+    color:rgba(24, 21, 21, 0.767);
+    font-size: 60px;
+}
